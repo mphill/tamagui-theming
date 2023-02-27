@@ -22,6 +22,8 @@ Tamagui includes a default font family called [Inter](https://fonts.google.com/s
    - [React Native](https://github.com/unimonkiez/react-native-asset)
    - Web - verify your CSS correctly defines the font family
 
+
+
 ### Getting Started
 
 [Merriweather](https://fonts.google.com/specimen/Merriweather) is a free font from Google.  It was selected for this guide because it's a serif font (extra strokes on the ends of their letterforms), and it will be easy to visually verify your configuration is working.  Both `.oft` and `.ttf` file formats are supported, with `.otf` being a newer format, typically with a smaller size.  Both work on native and web targets.
@@ -33,6 +35,8 @@ Assume you have added and configured 3 fonts:
 3. MerriweatherItalic
 
 Let's add support to tamagui for regular, bold and italic fonts, and then build variants for each.
+
+
 
 ### Create the Font
 
@@ -67,8 +71,8 @@ const merriweatherFont = createGenericFont(
 			7: "none", // <Paragraph> will add `transform="none"` for sizes 7-16
 		},
 		weight: {
-			1: "600", // <Paragraph> will add `fontWeight="100"` for sizes 1-6
-			7: "100", // <Paragraph> will add `fontWeight="600"` for sizes 7-16
+			1: "100", // <Paragraph> will add `fontWeight="100"` for sizes 1-6
+			7: "600", // <Paragraph> will add `fontWeight="600"` for sizes 7-16
 		},
 		color: {
 			// Assigned colors based on sizes.
@@ -100,7 +104,7 @@ const merriweatherFont = createGenericFont(
 
 
 
-## Use the font in your config
+### Use the Font in Your Config
 
 In your `tamagui.config.ts` file add the header and body
 
@@ -148,7 +152,7 @@ fonts: {
 
 
 
-Heading inherit from `<Paragraph>` but token values, it's important to know these values so you can control the look of the design system. Although it's permitted, it is not recommended to specify a size on a header, for example `<H1 size="$2">Tamagui</H1>`. 
+Heading inherits from `<Paragraph>` but token values, it's important to know these values so you can control the look of the design system. Although it's permitted, it is not recommended to specify a size on a header, for example `<H1 size="$2">Tamagui</H1>`. 
 
 | Component | Size Token |
 | --------- | ---------- |
