@@ -4,9 +4,13 @@
 
 [TOC]
 
+
+
 ### Introduction
 
 Tamagui includes a default font family called [Inter](https://fonts.google.com/specimen/Inter) (`yarn add @tamagui/font-inter`) that can be used out of the box.  This guide is about installing and configuring a custom font family.
+
+
 
 ### Setup
 
