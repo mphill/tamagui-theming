@@ -67,12 +67,13 @@ const merriweatherFont = createGenericFont(
 			16: 124,
 		},
 		transform: {
-			1: "uppercase", // <Paragraph> will add `transform="uppercase"` for sizes 1-6. unspecified sizes will use the value from the previously before defined size
-			7: "none", // <Paragraph> will add `transform="none"` for sizes 7-16
+      1: "none", // <Paragraph> will add `transform="none"` for sizes 1-6
+			7: "uppercase", // <Paragraph> will add `transform="uppercase"` for sizes 7+. unspecified sizes will use the value from the previously before defined size
+			
 		},
 		weight: {
-			1: "100", // <Paragraph> will add `fontWeight="100"` for sizes 1-6
-			7: "600", // <Paragraph> will add `fontWeight="600"` for sizes 7-16
+			4: "400", // <Paragraph> will add `fontWeight="400"` for sizes 4-6
+			7: "700", // <Paragraph> will add `fontWeight="700"` for sizes 7+
 		},
 		color: {
 			// Assigned colors based on sizes.
@@ -83,13 +84,13 @@ const merriweatherFont = createGenericFont(
 			1: 0.5, // Create a base
 		},
 		face: {
-			"100": {
-				// Remember we weight of 100 to size 7+
+			"400": {
+				// Remember we added a weight of 400 to sizes 4-6 
 				italic: "MerriweatherItalic",
 				normal: "Merriweather",
 			},
-			"600": {
-				// And weight of 600 to size 1-6
+			"700": {
+				// And weight of 700 to sizes 7+
 				italic: "MerriweatherItalic",
 				normal: "MerriweatherBold",
 			},
