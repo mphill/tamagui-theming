@@ -1,4 +1,4 @@
-# ## Tamagui Theming Guide
+## Tamagui Theming Guide
 
 [Typography](typography.md)
 
