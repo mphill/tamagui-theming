@@ -126,7 +126,7 @@ fonts: {
 
 
 
-The `<Paragraph>` component is generally used for body content.  Its most important aspect is that is used the $color token to control its color.  This allows light and dark theming to be handled for you automatically. Using <SizeableText> or <Text> 
+The <Paragraph> component is generally used for body content.  Its most important aspect is that is used the $color token to control its color.  This allows light and dark theming to be handled for you automatically. Using `<SizeableText>` or `<Text>` 
 
 `<Paragraph>` has a color token of `$color`
 
@@ -160,13 +160,13 @@ Heading inherit from `<Paragraph>` but token values, it's important to know thes
 
 ### Bolding & Italic
 
-Bolding for <Paragraph> based components is controlled by the fontWeight, while fontStyle is used to control if the font is italic or normal.  This mimics how CSS and React Native work.
+Bolding for `<Paragraph>` based components is controlled by the `fontWeight`, while `fontStyle` is used to control if the font is `italic` or `normal`.  This mimics how CSS and React Native work.
 
 
 
 ### Create Custom Typography Components
 
-Adding **bold**, *italic* and <u>underlined</u> variants to <Paragraph>
+Adding **bold**, *italic* and <u>underlined</u> variants to `<Paragraph>`
 
 ```tsx
 import { GetProps, styled } from "@tamagui/web";
